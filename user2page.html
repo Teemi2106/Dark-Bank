@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+  </head>
+  <body>
+    <header>
+      <h1>Account</h1>
+    </header>
+    <main>
+      <section class="usename">
+        <h2>Welcome Worlds-Parent</h2>
+        <h2>Balance: <span>$295,550,000.00</span></h2>
+      </section>
+
+      <section class="acct">
+        <div><h3>Account Summary</h3></div>
+        <div class="transactions">
+          <p class="credit">$130,000</p>
+          <p class="debit">$130,500</p>
+          <p class="debit">$25,000</p>
+          <p class="debit">$44,100,00</p>
+          <p class="credit">$10,330,000</p>
+          <p class="credit">$30,000,000</p>
+          <p class="credit">$70,300,000</p>
+          <p class="debit">$1,500,500</p>
+          <p class="debit">$32,220,500</p>
+          <p class="debit">$90,500</p>
+          <p class="debit">$800,500</p>
+        </div>
+      </section>
+    </main>
+    <footer><p>Customrights &copy;Dark Bank</p></footer>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 10vmin;
+        text-align: center;
+        font-size: 4vmin;
+      }
+      main {
+        min-height: 90vh;
+      }
+      .usename {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        background-color: greenyellow;
+        padding: 0.5rem;
+      }
+      .credit {
+        color: green;
+      }
+      .debit {
+        color: red;
+      }
+      .acct {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        padding: 3vmin;
+      }
+      .transactions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vmin;
+      }
+      footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+      }
+    </style>
+  </body>
+</html>

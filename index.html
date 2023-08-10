@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <body>
+    <header>Dark Bank</header>
+    <main>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <i id="showPasswordIcon" class="far fa-eye"></i><br /><br />
+
+        <button type="button" onclick="attemptLog()">Login</button>
+      </form>
+    </main>
+    <footer><p>Customrights &copy;Dark Bank</p></footer>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 8vmin;
+        text-align: center;
+        font-size: 6vmin;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+      }
+      main {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        width: 50%;
+        height: 70vh;
+        border-radius: 10px;
+      }
+      #password {
+        height: 5vmin;
+        width: 35vmin;
+        border-radius: 0 0 2rem 2rem;
+        text-align: center;
+      }
+      #username {
+        height: 5vmin;
+        width: 35vmin;
+        border-radius: 2rem 2rem 0 0;
+        text-align: center;
+        color: green;
+        font-weight: 500;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 100%;
+      }
+      button {
+        margin-top: 3vmin;
+        width: 30%;
+        height: 5vmin;
+        background-color: red;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        border-radius: 10px;
+      }
+    </style>
+    <script src="bank.js"></script>
+  </body>
+</html>
